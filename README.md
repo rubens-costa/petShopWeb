@@ -1,8 +1,7 @@
-<h1>▶️<a href="https://pet-shop-web.vercel.app/"> Pet Shop Web 1.0 </a></h1>
+<h1>🐶<a href="https://pet-shop-web.vercel.app/"> Pet Shop Web 1.0 </a></h1>
 <h2> Descrição </h2>
 
-<p>Aplicação web criada para adicionar, listar, editar e excluir produtos de um PetShop. 
-Desenvolvida com as tecnologias:</p>
+<p>Aplicação web criada para adicionar, listar, editar e excluir produtos de um PetShop. Desenvolvida com as tecnologias:</p>
 <div style="display: inline_block">
 
 <img src="https://img.shields.io/badge/html-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" />
