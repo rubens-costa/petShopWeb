@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/src/assets/img/icon.png" type="image/x-icon">
+    <title>Pet Shop Web - Admin</title>
+</head>
+
+<body>
+
+    <h1> Pet Shop Web 1.0</h1>
+
+    <form id="productForm">
+        <label for="productName">Nome do Produto: </label>
+        <input type="text" id="productName">
+
+        <label for="productPrice">Preço do Produto: </label>
+        <input type="text" id="productPrice">
+
+        <label for="productQtd">Quantidade do Produto: </label>
+        <input type="number" id="productQtd">
+
+
+        <button type="submit"><i class="fa-solid fa-plus"></i> Adicionar</button>
+    </form>
+
+    <table id="productTable">
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th>Nome do Produto</th>
+                <th>Preço do Produto</th>
+                <th>Quantidade em Estoque</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <!-- Conteúdo da tabela será preenchido dinamicamente via JS -->
+        </tbody>
+
+    </table>
+
+    <div id="updateModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModalBtn">&times;</span>
+            <h2>Editar Produto</h2>
+            <form id="updateForm">
+                <label for="updateProductName">Nome do Produto:</label>
+                <input type="text" id="updateProductName">
+
+                <label for="updateProductPrice">Preço do Produto:</label>
+                <input type="text" id="updateProductPrice">
+
+                <label for="updateProductQtd">Quantidade em Estoque:</label>
+                <input type="number" id="updateProductQtd">
+
+                <button id="updateProductBtn" type="button"><i class="fa-solid fa-pen"></i> Atualizar</button>
+            </form>
+        </div>
+    </div>
+</body>
+<script type="module" src="./src/assets/js/app.js"></script>
+
+</html>
